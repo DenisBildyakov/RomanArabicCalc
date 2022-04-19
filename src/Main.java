@@ -41,17 +41,7 @@ public class Main {
                 break;
             }
         }
-//        String under_charString = String.valueOf(input_line);
-//        String[] blacks = under_charString.split("[+-/*]");
-//        String stable00 = blacks[0];
-//        String stable01 = blacks[1];
-//        String string03 = stable01.trim();
-        //
-        // Если содержимое второй переменной забивает массив, значит пользователь ввел больше двух переменных. Выводим сообщение об этом.
-//        String tmp_stable01 = input.substring(0, index).trim();
-//        String[] blocks01 = tmp_stable01.split("[+-/*]");
-//        String tmp_stable02 = blocks01[1];
-//        String stable00 = tmp_stable02.trim();
+        
         // В stable00 помещаем все символы до знака операции. В stable01 все символы после знака.
         // Если в stable01 больше одной переменной, разбиваем их по знакам и берем только первую.
         // Если массив заполнился переменными, выводим сообщение об ошибке, но все равно считаем два первых числа.
@@ -63,12 +53,6 @@ public class Main {
         if (blocks02.length > 1) {
             System.out.println("Некорректный ввод. Повторите попытку.");
         }
-//        System.out.println("tmp_stable01: " + tmp_stable01);
-//        System.out.println("tmp_stable02: " + tmp_stable02);
-//        System.out.println("stable00: " + stable00);
-//        System.out.println("stable01: " + stable01);
-//        System.out.println("stable02: " + stable02);
-//        System.out.println("string03: " + string03);
 
         // Проверяем переменные. Если они состоят из цифр, то парсим в целое число. В противном случае переводим в римские цифры.
         if (isNumeric(stable00) && isNumeric(string03)) {
